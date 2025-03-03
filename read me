@@ -21,7 +21,7 @@ ROSphere/
 ## Datos de pacientes
 
 Los datos de los 20 pacientes se almacenan en un repositorio separado para mantener un tamaño de despliegue óptimo:
-[ROSphere-Data](https://github.com/pabherher19/ROSphere-Data)
+[ROSpheredata](https://github.com/pabherher19/ROSpheredata)
 
 ## Ejecución local
 
