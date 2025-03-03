@@ -1,0 +1,44 @@
+# ROSphere Monitor
+
+Aplicación de monitoreo de parámetros hemodinámicos para predecir el riesgo de SatO2 <65% en pacientes.
+
+## Sobre la aplicación
+
+ROSphere es una interfaz de monitoreo médico que visualiza:
+- Presión Arterial Media (MAP)
+- Gasto Cardíaco (CO)
+- Variación del Volumen Sistólico (SVV)
+- Variación de la Presión de Pulso (PVV)
+- Predicción de riesgo utilizando un algoritmo de Machine Learning
+
+## Estructura del proyecto
+
+```
+ROSphere/
+├── app.py                  # Aplicación principal de Streamlit
+├── requirements.txt        # Dependencias del proyecto
+├── api/                    # Carpeta para la configuración de Vercel
+│   └── index.py            # Punto de entrada para Vercel
+├── vercel.json             # Configuración de Vercel
+└── data/                   # Carpeta de datos (opcional)
+```
+
+## Ejecución local
+
+1. Clona este repositorio
+2. Instala las dependencias: `pip install -r requirements.txt`
+3. Ejecuta la aplicación: `streamlit run app.py`
+
+## Despliegue
+
+Esta aplicación Streamlit funciona mejor en plataformas como:
+- Streamlit Cloud
+- Railway
+- Render
+- Heroku
+
+El despliegue en Vercel tiene limitaciones debido a la naturaleza sin servidor de Vercel y los requisitos de servidor de Streamlit.
+
+## Desarrollado por
+
+Pablo Hernández Hernández
