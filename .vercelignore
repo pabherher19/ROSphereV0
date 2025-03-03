@@ -1,0 +1,9 @@
+*.py
+!api/index.py
+*.xlsx
+*.xls
+*.csv
+__pycache__/
+venv/
+.vscode/
+data/
