@@ -5,6 +5,29 @@ import numpy as np
 import pandas as pd
 import time
 
+# Añadir estas importaciones al principio del archivo
+import requests
+from io import BytesIO
+
+# Función para cargar datos de pacientes (añadir después de las importaciones)
+def load_patient_data(patient_number):
+    """
+    Carga datos del paciente desde el repositorio remoto.
+    """
+    # Carga directamente desde GitHub
+    st.info(f"Cargando datos del paciente {patient_number} desde el repositorio remoto...")
+    url = f"https://github.com/pabherher19/ROSpheredata/raw/main/data/{patient_number}.xlsx"
+    try:
+        response = requests.get(url)
+        if response.status_code == 200:
+            return pd.read_excel(BytesIO(response.content))
+        else:
+            st.error(f"No se pudo cargar datos para el paciente {patient_number} (Código: {response.status_code})")
+            return None
+    except Exception as e:
+        st.error(f"Error al cargar datos remotos: {str(e)}")
+        return None
+
 # Configuración de la página
 st.set_page_config(
     page_title="ROSphere Monitor",

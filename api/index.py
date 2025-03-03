@@ -36,6 +36,12 @@ def catch_all(path):
                 border-radius: 5px;
                 margin: 20px 0;
             }
+            .data-info {
+                background-color: #e8f5e9;
+                padding: 15px;
+                border-radius: 5px;
+                margin: 20px 0;
+            }
             .cta {
                 background-color: #4CAF50;
                 color: white;
@@ -44,6 +50,15 @@ def catch_all(path):
                 border-radius: 5px;
                 display: inline-block;
                 margin-top: 20px;
+            }
+            .data-cta {
+                background-color: #2196F3;
+                color: white;
+                padding: 10px 20px;
+                text-decoration: none;
+                border-radius: 5px;
+                display: inline-block;
+                margin-top: 10px;
             }
             code {
                 background-color: #f8f9fa;
@@ -72,6 +87,13 @@ def catch_all(path):
                     <li>Simulación de tendencias en parámetros médicos</li>
                     <li>Predicción de riesgo mediante algoritmo de Machine Learning</li>
                 </ul>
+            </div>
+            
+            <div class="data-info">
+                <h3>Acceso a datos:</h3>
+                <p>Los datos de pacientes están disponibles en un repositorio separado para optimizar el tamaño de despliegue:</p>
+                <a href="https://github.com/pabherher19/ROSphere-Data" class="data-cta" target="_blank">Repositorio de Datos</a>
+                <p><small>Estos datos contienen la información para los 20 pacientes que pueden seleccionarse en la aplicación.</small></p>
             </div>
             
             <div class="info">

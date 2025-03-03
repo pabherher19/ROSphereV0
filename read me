@@ -12,22 +12,23 @@ ROSphere es una interfaz de monitoreo médico que visualiza:
 - Predicción de riesgo utilizando un algoritmo de Machine Learning
 
 ## Estructura del proyecto
-
-```
 ROSphere/
 ├── app.py                  # Aplicación principal de Streamlit
 ├── requirements.txt        # Dependencias del proyecto
 ├── api/                    # Carpeta para la configuración de Vercel
 │   └── index.py            # Punto de entrada para Vercel
-├── vercel.json             # Configuración de Vercel
-└── data/                   # Carpeta de datos (opcional)
-```
+└── vercel.json             # Configuración de Vercel
+## Datos de pacientes
+
+Los datos de los 20 pacientes se almacenan en un repositorio separado para mantener un tamaño de despliegue óptimo:
+[ROSphere-Data](https://github.com/pabherher19/ROSphere-Data)
 
 ## Ejecución local
 
 1. Clona este repositorio
-2. Instala las dependencias: `pip install -r requirements.txt`
-3. Ejecuta la aplicación: `streamlit run app.py`
+2. Clona también el repositorio de datos y coloca la carpeta "data" en la raíz del proyecto
+3. Instala las dependencias: `pip install -r requirements.txt`
+4. Ejecuta la aplicación: `streamlit run app.py`
 
 ## Despliegue
 
